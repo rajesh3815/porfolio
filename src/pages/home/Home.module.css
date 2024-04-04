@@ -1,0 +1,263 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* position: relative; */
+
+}
+
+.content {
+    /* border: 1px solid black; */
+    margin-top: 6rem;
+    width: 50vw;
+    height: 70vh;
+}
+
+.content__hero__img {
+    animation: customBorderRadius 8s ease-in-out infinite;
+    background-image: url('../../images/logo.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #2d2e32;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 20rem;
+    position: relative;
+    transition: all 1s ease-in-out;
+    width: 20rem;
+}
+
+.content__hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content__hero__left {
+    position: relative;
+    width: 70%;
+}
+
+.content__hero__left img {
+    position: absolute;
+    top: 3.7rem;
+    right: 13.5rem;
+    width: 3.3rem;
+}
+
+.content__hero__left__about {
+    color: #555;
+    font-family: Mulish, sans-serif;
+    font-size: .85rem;
+    font-weight: 500;
+    line-height: 1.6;
+    width: 60%;
+}
+
+.content__hero__left__desc {
+    color: #2d2e32;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+}
+
+.spansLogo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    font-size: 1.4rem;
+    margin-top: 2.5rem;
+
+}
+
+.spansLogo a {
+    color: black;
+    font-size: 1.4rem;
+}
+
+.skills {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.skillsLogo {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.skillsLogo span {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.skillsLogo span img {
+    background-color: #f9f9f9;
+    height: 2.7rem;
+    width: 2.7rem;
+    border-radius: 12px;
+
+
+}
+
+.skillsLogo>span:hover {
+    transform: translateY(-1rem);
+}
+
+.skills p {
+    border-right: 0.5px solid rgba(45, 46, 50, .5);
+    color: #494a4e;
+    font-family: Mulish, sans-serif;
+    font-weight: 600;
+    margin-right: 1rem;
+    padding-right: 1rem;
+}
+
+button a:hover {
+    color: #1c1c1c;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .content {
+        width: 100%;
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content__hero {
+        flex-direction: column-reverse;
+    }
+
+    .content__hero__left {
+        width: 100%;
+    }
+
+    .container {
+        padding: 2rem;
+    }
+
+    .content__hero__left__about {
+        width: 86%;
+        font-size: 1.1rem;
+        letter-spacing: 0px;
+    }
+
+    .content__hero__left img {
+        top: 3.7rem;
+        right: 5rem;
+    }
+    .spansLogo{
+        margin-bottom: 2rem;
+    }
+    .skills{
+        flex-direction: column;
+
+    }
+    .skills p{
+        border-right: none;
+        border-bottom: 0.5px solid rgba(45, 46, 50, .5);
+    }
+    .skillsLogo{
+        gap: 2rem;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes customBorderRadius {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+/* buttton codes start */
+
+
+
+.button29 {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #f1ffa2 0, #20ff41 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(167, 245, 155, 0.4) 0 2px 4px, rgba(149, 234, 110, 0.3) 0 7px 13px -3px, rgba(110, 216, 108, 0.5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 40px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+
+.button29:focus {
+    box-shadow: #6de03c 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #15f006 0 -3px 0 inset;
+}
+
+.button29:hover {
+    box-shadow: rgba(171, 248, 141, 0.4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #55ec4a 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button29:active {
+    box-shadow: #28db3d 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+/* buttton codes end */
