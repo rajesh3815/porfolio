@@ -1,0 +1,98 @@
+.container {
+    margin-top: 8rem;
+    height: max-content;
+}
+
+.contactsDiv {
+    background-color: #6E07F3;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contactsDivHeader {
+    width: 80%;
+    background-color: #141c3a;
+    height: 10rem;
+    border-radius: 12px;
+    margin-left: auto;
+    top: -4rem;
+    color: white;
+    left: 9.8vw;
+    position: absolute;
+    margin-right: auto;
+    padding: 1rem 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contactsDivHeader button{
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    padding: 0.7rem 1.5rem;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    background-color: #141c3a;
+    border: 2px solid #5BE9B9;
+   transition: all 0.3s;
+}
+.contactsDiv button:hover{
+    background-color: #5BE9B9;
+    color: black;
+}
+.contactsDivHeader p:nth-of-type(1){
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.contactsDivHeader p:nth-of-type(2){
+    width: 22rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+.contactsFooter{
+    margin-top: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.footerLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.3rem;
+}
+.footerLink span{
+    border-radius: 50%;
+    padding:7px;
+    border: 1px solid rgb(216, 188, 255);
+    background-color: #6E07F3;
+    display: flex;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.footerLink span:hover{
+    background-color: white;
+    color: #6E07F3;
+}
+.footerLink span a{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.footerLink span a:hover{
+    color:#6E07F3;
+}
+.contactsFooter p{
+    color: #d8d7ff;
+    font-size: 1.7rem;
+    width: 26%;
+}

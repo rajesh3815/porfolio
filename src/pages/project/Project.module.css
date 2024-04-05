@@ -1,7 +1,7 @@
 .container{
     position: relative;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
 }
 .container h2{
     letter-spacing: 1px;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
     font-size: 1.3rem;
     color: #353535;
     font-weight: lighter;
@@ -28,3 +28,95 @@
 .container h2 a:hover{
     color: #0657a7;
 }
+.projects{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 22rem;
+    /* height: 15rem; */
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .imgcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 7rem;
+    background-color: #fbe3e8 ;
+  }
+  .carddetails{
+    padding: 10px;
+    height: max-content;
+    padding: 0.8rem 1.3rem;
+    text-align: left;
+  }
+  .imgcontainer img{
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+  }
+  .carddetails span{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .carddetails div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 12px 0;
+  }
+  .carddetails div span{
+    color: #676464;
+    padding: 2px 5px;
+    border-radius: 4px;
+    background: #e4e4e4;
+    cursor: pointer;
+  }
+  .carddetails span p:nth-of-type(1){
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #403f3f;
+}
+.carddetails span p:nth-of-type(2){
+    background-color: rgb(207 249 207);
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 2px 5px;
+    color: #4e5252;
+    cursor: pointer;
+}
+.carddetails p{
+    color: #545353;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.btnDiv button{
+    cursor: pointer;
+    color: black;
+    background-color: #6c6d6f;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 7px;
+    letter-spacing: 0.8px;
+}
+.btnDiv button:nth-of-type(1){
+    background: #9af6ae;
+}
+.btnDiv button:nth-of-type(2){
+    background-color: red;
+    color:white;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+  

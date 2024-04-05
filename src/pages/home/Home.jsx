@@ -61,13 +61,7 @@ const Home = () => {
               >
                 <SiLeetcode />
               </a>
-              <a
-                href="https://www.instagram.com/rajesh_.___kumar/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaInstagram />
-              </a>
+             
             </span>
           </div>
           <div className={Styles.content__hero__img}></div>
