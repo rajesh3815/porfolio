@@ -14,11 +14,14 @@ const ContactMe = () => {
           <p>
             Interested in working together? We should queue up a time to chat.
           </p>
-          <button>
-            <a style={{ color: "white" }} href="https://www.linkedin.com/in/rajesh111/ " target="_blank">
-              Let's do this
-            </a>
-          </button>
+
+          <a
+            style={{ color: "white" }}
+            href="https://www.linkedin.com/in/rajesh111/ "
+            target="_blank"
+          >
+            <button> Let's do this</button>
+          </a>
         </div>
         <div className={Styles.contactsFooter}>
           <img
@@ -62,10 +65,13 @@ const ContactMe = () => {
               </a>
             </span>
           </div>
-          <p style={{textAlign:"center",fontSize:"1rem",marginTop:"1rem"}}>Made by @Rajesh🙎</p>
+          <p
+            style={{ textAlign: "center", fontSize: "1rem", marginTop: "1rem" }}
+          >
+            Made by @Rajesh🙎
+          </p>
         </div>
       </div>
-      
     </div>
   );
 };

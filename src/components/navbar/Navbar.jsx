@@ -13,8 +13,8 @@ const Navbar = () => {
   };
   return (
     <nav className={Styles.container}>
-      <div className={Styles.logo}>
-        <span>rajesh.dev</span>
+      <div onClick={() => scrollToSection("home")} className={Styles.logo}>
+        <span>&lt;rajesh.dev&nbsp;/&gt;</span>
       </div>
       {/* <div className={Styles.container__wrapper}> */}
       <ul

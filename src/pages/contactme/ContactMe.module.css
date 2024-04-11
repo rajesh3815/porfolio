@@ -29,7 +29,8 @@
     align-items: center;
     justify-content: space-between;
 }
-.contactsDivHeader button{
+
+.contactsDivHeader button {
     cursor: pointer;
     color: white;
     border-radius: 20px;
@@ -38,23 +39,27 @@
     font-size: 1.2rem;
     background-color: #141c3a;
     border: 2px solid #5BE9B9;
-   transition: all 0.3s;
+    transition: all 0.3s;
 }
-.contactsDiv button:hover{
+
+.contactsDiv button:hover {
     background-color: #5BE9B9;
     color: black;
 }
-.contactsDivHeader p:nth-of-type(1){
+
+.contactsDivHeader p:nth-of-type(1) {
     font-size: 1.5rem;
     letter-spacing: 1px;
     font-weight: 600;
 }
-.contactsDivHeader p:nth-of-type(2){
+
+.contactsDivHeader p:nth-of-type(2) {
     width: 22rem;
     line-height: 1.5rem;
     letter-spacing: 1px;
 }
-.contactsFooter{
+
+.contactsFooter {
     margin-top: 13rem;
     display: flex;
     align-items: center;
@@ -63,15 +68,17 @@
     flex-direction: column;
     gap: 4rem;
 }
-.footerLink{
+
+.footerLink {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2.3rem;
 }
-.footerLink span{
+
+.footerLink span {
     border-radius: 50%;
-    padding:7px;
+    padding: 7px;
     border: 1px solid rgb(216, 188, 255);
     background-color: #6E07F3;
     display: flex;
@@ -79,20 +86,56 @@
     width: 2.5rem;
     height: 2.5rem;
 }
-.footerLink span:hover{
+
+.footerLink span:hover {
     background-color: white;
+    z-index: -1px;
     color: #6E07F3;
 }
-.footerLink span a{
+
+.footerLink span a {
     color: white;
     font-size: 1.5rem;
     text-align: center;
 }
-.footerLink span a:hover{
-    color:#6E07F3;
+
+.footerLink span a:hover {
+    color: #6E07F3;
+    background-color: white;
+
 }
-.contactsFooter p{
+
+.contactsFooter p {
     color: #d8d7ff;
     font-size: 1.7rem;
     width: 26%;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .contactsDivHeader {
+        flex-direction: column;
+        gap: 1.3rem;
+        position: static;
+        margin-top: -4rem;
+        padding: 1rem;
+        height: max-content;
+        width: 95%;
+        text-align: center;
+    }
+
+    .contactsDivHeader p:nth-of-type(2) {
+        width: 100%;
+    }
+
+    .contactsFooter {
+        margin-top: 5rem;
+        gap: 3rem;
+    }
+
+    .contactsFooter p {
+        width: 100%;
+        font-size: 1.4rem;
+
+    }
 }

@@ -1,9 +1,9 @@
-.container{
+.container {
     /* position: relative; */
     width: 100%;
 }
 
-.pitch{
+.pitch {
     width: 100%;
     background-color: #6E07F3;
     display: flex;
@@ -12,33 +12,33 @@
     /* position: relative; */
 
 }
-.pitchContainer{
-    margin-top: 10rem;
-    width: 60%;
+
+.pitchContainer {
+    margin-top: 5rem;
+    width: 70%;
     color: white;
-    
+
 }
-.pitchContainer h1{
+
+.pitchContainer h1 {
     font-family: "eurostile", sans-serif;
     margin-bottom: 1.5rem;
     text-align: center;
     font-size: 1.7rem;
 }
-.pitchContainer p{
+
+.pitchContainer p {
     font-size: 1.2rem;
     letter-spacing: 1px;
     line-height: 1.8rem;
     word-break: break-word;
     text-align: center;
-    
 }
-.skillblock{
+
+.skillblock {
     width: 85%;
     display: flex;
-    /* top: 31rem; */
     border-radius: 17px;
-    /* left: 7.5%; */
-    /* position: absolute; */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     background-color: #f7f7f7;
     border: 0.5px solid rgba(45, 46, 50, .2);
@@ -46,7 +46,8 @@
     margin-right: auto;
     margin-top: -10rem;
 }
-.skillblockDiv{
+
+.skillblockDiv {
     color: #141c3a;
     display: flex;
     flex-direction: column;
@@ -57,7 +58,8 @@
     text-align: center;
     border-right: 0.5px solid rgba(45, 46, 50, .1);
 }
-.skillblockDiv ul{
+
+.skillblockDiv ul {
     display: flex;
     list-style-type: none;
     flex-direction: column;
@@ -65,48 +67,101 @@
 
 
 }
-.skillblockDiv img{
+
+.skillblockDiv img {
     width: 3rem;
     height: 3rem;
 
 }
-.skillblockDiv span{
+
+.skillblockDiv span {
     background-color: #31f7b9;
     padding: 10px;
     border-radius: 50%;
 }
-.skillblockDiv h1{
+
+.skillblockDiv h1 {
     font-size: 1.5rem;
     margin: 1.5rem 0;
 }
-.skillblockDiv p:nth-of-type(1){
+
+.skillblockDiv p:nth-of-type(1) {
     font-size: 17px;
     letter-spacing: 1.5px;
     line-height: 1.6rem;
     width: 85%;
     margin-bottom: 2.5rem;
 }
-.skillblockDiv p:nth-of-type(2){
+
+.skillblockDiv p:nth-of-type(2) {
     font-size: 17px;
     letter-spacing: 1px;
     margin-bottom: 10px;
-    color: #6E07F3 ;
+    color: #6E07F3;
 }
-.skillblockDiv p:nth-of-type(3){
+
+.skillblockDiv p:nth-of-type(3) {
     font-size: 17px;
     letter-spacing: 1px;
     margin-bottom: 5rem;
-    
+
 }
-.skillblockDiv p:nth-of-type(4){
+
+.skillblockDiv p:nth-of-type(4) {
     font-size: 17px;
     letter-spacing: 1px;
     margin-bottom: 1.5rem;
-    color: #6E07F3 ;
+    color: #6E07F3;
 }
-.skillblock ul li{
+
+.skillblock ul li {
     cursor: pointer;
 }
-.skillblock ul li:hover{
+
+.skillblock ul li:hover {
     color: #bd8aff;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .pitch {
+        height: 100vh;
+    }
+
+    .pitchContainer {
+        margin-top: 2rem;
+        width: 90%;
+
+    }
+
+    .pitchContainer h1 {
+        font-size: 1.3rem;
+    }
+
+    .pitchContainer p {
+        font-size: 1rem;
+        text-align: unset;
+        line-height: 1.7rem
+    }
+
+    .skillblock {
+        width: 90%;
+        flex-direction: column;
+        margin-top: -4rem;
+    }
+
+    .skillblockDiv {
+        width: 100%;
+        padding: 2rem 1.4rem;
+        border-bottom: 0.5px solid rgba(45, 46, 50, .1);
+    }
+
+    .skillblockDiv p:nth-of-type(1) {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .skillblockDiv p:nth-of-type(3) {
+        margin-bottom: 3rem;
+    }
 }

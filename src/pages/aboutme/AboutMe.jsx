@@ -3,6 +3,7 @@ import Styles from "./AboutMe.module.css";
 import uiux from "../../images/uiux.png";
 import frontend from "../../images/frontend.svg";
 import full from "../../images/fullstack.png";
+
 const AboutMe = () => {
   return (
     <div id="aboutme" className={Styles.container}>
@@ -10,13 +11,18 @@ const AboutMe = () => {
         <div className={Styles.pitchContainer}>
           <h1>Hy I am Rajesh Nice to Meet You</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse culpa
-            corporis accusantium, explicabo earum veritatis sequi dicta eos ut
-            molestiae, recusandae sapiente ea odit magnam delectus. Architecto
-            reprehenderit consectetur, debitis vitae provident harum neque
-            deserunt a est at expedita assumenda quibusdam nemo perspiciatis
-            corporis delectus illo dolorum nam tempora atque nisi nulla
-            necessitatibus accusamus.{" "}
+            <span style={{ color: "red" }}>&lt;p&gt;</span> In the field of
+            technology, Things i can do for you. As a full-stack developer
+            specializing in the MERN stack, I have completed several projects in
+            this field. Despite being a fresher, I can develop quality,
+            scalable, and user-friendly web apps using my skills. Additionally,
+            I have solved over 500+ coding questions on various platforms using
+            the Java programming language, which enhanced my problem-solving
+            abilities. Regarding my core technical skills, I excel in React and
+            can create RESTful APIs in Express. Furthermore, I possess soft
+            skills such as strong communication, a quick learning attitude,
+            maintained an 8.5 CGPA throughout my career.{" "}
+            <span style={{ color: "red" }}>&lt;/p&gt;</span>
           </p>
         </div>
       </div>
@@ -78,7 +84,7 @@ const AboutMe = () => {
             products through the development .
           </p>
           <p>Languages I speak:</p>
-          <p>HTML, CSS, JavaScript, React.js, Node.js, Python, SQL</p>
+          <p>HTML, CSS, JavaScript, React.js, Node.js, SQL</p>
           <p>Frameworks & Tools:</p>
           <ul>
             <li>React.js</li>

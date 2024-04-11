@@ -17,6 +17,7 @@ import node from "../../images/nodejs-icon.svg";
 import mongo from "../../images/mongo.png";
 import redux from "../../images/redux.svg";
 import resume from "../../images/Rajesh.resume.pdf";
+// import profilepic from '../../images/project/profilepic.jpg'
 const Home = () => {
   return (
     <div id="home" className={Styles.container}>

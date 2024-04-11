@@ -10,27 +10,27 @@
 }
 
 .content {
-    /* border: 1px solid black; */
-    margin-top: 6rem;
+    margin: auto;
     width: 50vw;
-    height: 70vh;
+    height: max-content;
 }
 
 .content__hero__img {
     animation: customBorderRadius 8s ease-in-out infinite;
-    background-image: url('../../images/logo.png');
+    background-image: url('../../images/project/profilepic.jpg');
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid #2d2e32;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    height: 20rem;
+    height: 15rem;
     position: relative;
     transition: all 1s ease-in-out;
-    width: 20rem;
+    width: 15rem;
 }
 
 .content__hero {
+    width: 45rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,13 +38,13 @@
 
 .content__hero__left {
     position: relative;
-    width: 70%;
+    width: 62%;
 }
 
 .content__hero__left img {
     position: absolute;
     top: 3.7rem;
-    right: 13.5rem;
+    right: 11.5rem;
     width: 3.3rem;
 }
 
@@ -80,6 +80,9 @@
 .spansLogo a {
     color: black;
     font-size: 1.4rem;
+}
+.spansLogo a:hover{
+    color: #15f006;
 }
 
 .skills {
@@ -134,13 +137,15 @@ button a:hover {
 
     .content {
         width: 100%;
-        margin-top: 1rem;
+        /* height: max-content; */
+        margin-top: 0;
         flex-direction: column;
         align-items: flex-start;
     }
 
     .content__hero {
         flex-direction: column-reverse;
+         width: 100%;
     }
 
     .content__hero__left {
@@ -149,17 +154,19 @@ button a:hover {
 
     .container {
         padding: 2rem;
+        height: max-content;
     }
 
     .content__hero__left__about {
-        width: 86%;
+        width: 100%;
         font-size: 1.1rem;
         letter-spacing: 0px;
     }
 
     .content__hero__left img {
         top: 3.7rem;
-        right: 5rem;
+        right: 3.2rem;
+       
     }
     .spansLogo{
         margin-bottom: 2rem;
@@ -171,10 +178,15 @@ button a:hover {
     .skills p{
         border-right: none;
         border-bottom: 0.5px solid rgba(45, 46, 50, .5);
+        padding-right: 0;
     }
     .skillsLogo{
         gap: 2rem;
-        justify-content: center;
+        justify-content:space-evenly;
+    }
+    .content__hero__img{
+        width: 16rem;
+        height: 16rem;
     }
 }
 

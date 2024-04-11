@@ -48,13 +48,15 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    height: 7rem;
-    background-color: #fbe3e8 ;
+    height: 7.5rem;
+    background-color: #f7b6c4 ;
   }
   .carddetails{
-    padding: 10px;
     height: max-content;
-    padding: 0.8rem 1.3rem;
+    padding: 0.8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
     text-align: left;
   }
   .imgcontainer img{
@@ -71,7 +73,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin: 12px 0;
+    margin: 9px 0;
   }
   .carddetails div span{
     color: #676464;
@@ -110,13 +112,28 @@
 .btnDiv button:nth-of-type(1){
     background: #9af6ae;
 }
-.btnDiv button:nth-of-type(2){
-    background-color: red;
+.btnDiv button:nth-of-type(1):hover{
+  color: white;
+}
+
+.btnDiv a:nth-of-type(2) button{
+    background-color: rgb(255, 6, 6);
     color:white;
 }
+
+.btnDiv a:nth-of-type(2) button:hover{
+  color:rgb(28, 27, 27);
+}
+
 .card:hover{
     cursor: pointer;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+@media only screen and (max-width: 767px) {
+  .container h2{
+    margin-bottom: 4rem;
+    font-size: 1rem;
+  }
 }
 
   
