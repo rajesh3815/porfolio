@@ -165,3 +165,9 @@
         margin-bottom: 3rem;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    .pitch{
+     height: 125vh;
+    }
+}

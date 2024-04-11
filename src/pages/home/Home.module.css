@@ -164,7 +164,7 @@ button a:hover {
     }
 
     .content__hero__left img {
-        top: 3.7rem;
+        top: 2.7rem;
         right: 3.2rem;
        
     }
@@ -185,8 +185,11 @@ button a:hover {
         justify-content:space-evenly;
     }
     .content__hero__img{
-        width: 16rem;
-        height: 16rem;
+        width: 13rem;
+        height: 13rem;
+    }
+    .content__hero__left__desc {
+        font-size: 1.8rem;
     }
 }
 
