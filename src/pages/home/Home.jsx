@@ -27,13 +27,14 @@ const Home = () => {
             <p className={Styles.content__hero__left__desc}>
               Full-Stack Web Developer
             </p>
-            <img src={waving} alt="" />
+            <img src={waving} className={Styles.imgMedia} alt="" />
             <p className={Styles.content__hero__left__about}>
               Hi, I'm Rajesh Kumar . A passionate Full-Stack Devloper based in
               India Odisha. 📍
             </p>
             <span className={Styles.spansLogo}>
-              <a style={{fontSize:"1.7rem"}}
+              <a
+                style={{ fontSize: "1.7rem" }}
                 href="https://www.linkedin.com/in/rajesh111/"
                 target="_blank"
                 rel="noreferrer"
@@ -62,7 +63,6 @@ const Home = () => {
               >
                 <SiLeetcode />
               </a>
-             
             </span>
           </div>
           <div className={Styles.content__hero__img}></div>
@@ -74,7 +74,7 @@ const Home = () => {
               display: "flex",
               alignItems: "center",
               gap: "5px",
-              letterSpacing:".5px"
+              letterSpacing: ".5px",
             }}
             href={resume}
             target="_blank"

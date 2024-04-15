@@ -81,7 +81,8 @@
     color: black;
     font-size: 1.4rem;
 }
-.spansLogo a:hover{
+
+.spansLogo a:hover {
     color: #15f006;
 }
 
@@ -145,7 +146,7 @@ button a:hover {
 
     .content__hero {
         flex-direction: column-reverse;
-         width: 100%;
+        width: 100%;
     }
 
     .content__hero__left {
@@ -165,29 +166,37 @@ button a:hover {
 
     .content__hero__left img {
         top: 2.7rem;
-        right: 3.2rem;
-       
+        right: 7rem;
+        width: 2.8rem;
+        height: 2.8rem;
+
     }
-    .spansLogo{
+
+    .spansLogo {
         margin-bottom: 2rem;
     }
-    .skills{
+
+    .skills {
         flex-direction: column;
 
     }
-    .skills p{
+
+    .skills p {
         border-right: none;
         border-bottom: 0.5px solid rgba(45, 46, 50, .5);
         padding-right: 0;
     }
-    .skillsLogo{
+
+    .skillsLogo {
         gap: 2rem;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
     }
-    .content__hero__img{
+
+    .content__hero__img {
         width: 13rem;
         height: 13rem;
     }
+
     .content__hero__left__desc {
         font-size: 1.8rem;
     }
