@@ -54,6 +54,44 @@ const Project = () => {
 
         <div className={Styles.card}>
           <div
+            style={{ background: "#f7579a" }}
+            className={Styles.imgcontainer}
+          >
+            <img src={prof} alt="" />
+          </div>
+          <div className={Styles.carddetails}>
+            <span>
+              <p>Swip Tory</p>
+              <p>Active</p>
+            </span>
+            <div>
+              <span>Reactjs</span>
+              <span>Nodejs</span>
+              <span>JWT</span>
+              <span>mongoDB</span>
+            </div>
+            <p>
+             Swip Tory a social media platform where you can share your ideas in story format
+            </p>
+            <div className={Styles.btnDiv}>
+              <a
+                href="https://github.com/rajesh3815/swiptoryFrontend"
+                target="_blank"
+              >
+                <button>code</button>
+              </a>
+              <a
+                href="https://swiptorymedia.netlify.app/"
+                target="_blank"
+              >
+                <button>Live</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className={Styles.card}>
+          <div
             style={{ background: "#76e0f5" }}
             className={Styles.imgcontainer}
           >
@@ -216,43 +254,6 @@ const Project = () => {
                 target="_blank"
               >
                 <button>code</button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className={Styles.card}>
-          <div
-            style={{ background: "#7cd5f2" }}
-            className={Styles.imgcontainer}
-          >
-            <img src={prof} alt="" />
-          </div>
-          <div className={Styles.carddetails}>
-            <span>
-              <p>Profile Finder</p>
-              <p>Active</p>
-            </span>
-            <div>
-              <span>JavaScript</span>
-              <span>React</span>
-            </div>
-            <p>
-              GitHub profile finder web app to search and discover user
-              profiles.
-            </p>
-            <div className={Styles.btnDiv}>
-              <a
-                href="https://github.com/rajesh3815/wdp-main-projesct"
-                target="_blank"
-              >
-                <button>code</button>
-              </a>
-              <a
-                href="https://astonishing-buttercream-f12e66.netlify.app/"
-                target="_blank"
-              >
-                <button>Live</button>
               </a>
             </div>
           </div>
