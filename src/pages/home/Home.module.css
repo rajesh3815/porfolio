@@ -113,7 +113,7 @@
 }
 
 .skillsLogo span img {
-    background-color: var(--color);
+    background-color: white;
     height: 2.7rem;
     width: 2.7rem;
     border-radius: 12px;
