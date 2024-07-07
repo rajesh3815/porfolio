@@ -1,28 +1,31 @@
 .container {
     align-items: center;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
     display: flex;
     font-size: 1rem;
     height: auto;
     justify-content: space-between;
     left: 0;
-    padding: 15px 33px 18px 30px;
-    position: sticky;
-    top: 0;
+    padding: 15px 15px 18px 15px;
+
     width: 100%;
     z-index: 200;
 }
 
 .container__right {
+    background-color: var(--nav_bg);
+   
+    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+    border-radius: 24px;
+    padding: 13px 22px;
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 4rem;
     position: relative;
 }
 
 .container__right li a {
-    color: #2d2e32;
+
+    color: var(--link_col);
     font-weight: 600;
     text-decoration: none;
     transition: all .23s;
@@ -32,7 +35,7 @@
 
 .container__right a:hover {
     cursor: pointer;
-    color: #17b403;
+    color: #23f907;
     transition: all 0.3s ease;
 
 }
@@ -41,7 +44,7 @@
     content: "";
     width: 100%;
     height: 2px;
-    background-color: #21ad05;
+    background-color: #2fff05;
     position: absolute;
     bottom: -2px;
     left: 0;
@@ -52,7 +55,7 @@
     font-size: 1.4rem;
     font-weight: 800;
     letter-spacing: 1px;
-    color: #3a3b3f;
+    color: var(--nav_logo);
     ;
     cursor: pointer;
 }
@@ -62,8 +65,97 @@
     font-size: 28px;
 }
 
+/* for dark mode */
+.darkMode {
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.darkModeLabel {
+    width: 65px;
+    height: 30px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.darkModeLabel::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.darkModeInput {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.darkModeInput:checked+.darkModeLabel {
+    background: #242424;
+}
+
+.darkModeInput:checked+.darkModeLabel::after {
+    left: 62px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+.darkModeLabel:active::after {
+    width: 30px;
+}
+
+.darkModeLabel svg {
+    position: absolute;
+    width: 20px;
+    top: 5px;
+    z-index: 100;
+}
+
+.darkModeLabel .ds {
+    left: 5px;
+    fill: #fff;
+    transition: 0.3s;
+}
+
+.darkModeLabel .dm {
+    left: 40px;
+    fill: #7e7e7e;
+    transition: 0.3s;
+}
+
+.darkModeInput:checked+.darkModeLabel svg.sun {
+    fill: #7e7e7e;
+}
+
+.darkModeInput:checked+.darkModeLabel svg.moon {
+    fill: #fff;
+}
+
+/* --------- */
 
 @media only screen and (max-width: 767px) {
+    .logo {
+        position: absolute;
+        left: 7rem;
+        top: 19px;
+    }
+
+    .logo span {
+        font-size: 16px;
+    }
+
     li a {
         font-size: 23px;
         color: #5a5a5b;
@@ -80,15 +172,16 @@
     .container__right {
         flex-direction: column;
         position: absolute;
-        top: 3.9rem;
-        /* right: 2rem; */
+        top: 3.1rem;
+        right: 0rem;
         border-radius: 7px;
-        width: 90vw;
+        width: 100vw;
         margin: auto;
         align-items: center;
         gap: 2rem;
-
+        background: none;
         padding: 10px 0;
         backdrop-filter: blur(15px);
     }
+
 }

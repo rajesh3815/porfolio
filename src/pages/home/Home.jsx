@@ -67,21 +67,22 @@ const Home = () => {
           </div>
           <div className={Styles.content__hero__img}></div>
         </div>
-        <button className={Styles.button29}>
-          <a
-            style={{
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              gap: "5px",
-              letterSpacing: ".5px",
-            }}
-            href={resume}
-            target="_blank"
-          >
+        <a
+          style={{
+            textDecoration: "none",
+            display: "flex",
+            alignItems: "center",
+            gap: "5px",
+            letterSpacing: ".5px",
+            width: "100%",
+          }}
+          href={resume}
+          target="_blank"
+        >
+          <button className={Styles.button29}>
             resume <LiaDownloadSolid />
-          </a>{" "}
-        </button>
+          </button>
+        </a>{" "}
         <div className={Styles.skills}>
           <p>Tech Stack</p>
           <div className={Styles.skillsLogo}>

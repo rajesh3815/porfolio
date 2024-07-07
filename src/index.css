@@ -1,18 +1,48 @@
-*{
+:root {
+    --body_background: white;
+    --color:black;
+    --nav_logo:#3a3b3f;
+    --border_pht:black;
+    --box:rgba(255, 255, 255, 0.4) 0px 2px 48px;
+    --card_detail:#676464;
+    --anchor:black;
+    --nav_bg:white;
+    --link_col:#2d2e32;
+}
+
+[data-theme="dark"] {
+    --body_background: #111827;;
+    --color:white;
+    --nav_logo:white;
+    --border_pht:#1a6802;
+    --box:rgb(41 219 11 / 40%) 0px 2px 48px;
+    --card_detail:white;
+    --anchor:#5bb638;
+    --nav_bg: #1f2937;
+    --link_col:#9ca3af;
+}
+
+* {
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
     padding: 0;
-   
+    
+
 }
-body{
-    background-color: white;
+
+body {
+    background-color: var(--body_background);
+    color: var(--color);
+    transition: all 0.3s ease-in-out;
 }
-.app{
+
+.app {
     /* position: relative; */
     display: flex;
     flex-direction: column;
 }
-a{
+
+a {
     text-decoration: none;
 }
